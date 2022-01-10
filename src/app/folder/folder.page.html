@@ -1,0 +1,22 @@
+<ion-header [translucent]="false">
+  <ion-toolbar color="success">
+    <ion-title>YemekApp</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+  <ion-content [fullscreen]="true">
+  
+  <ion-list>
+
+  <ion-item *ngFor="let yemek of yemekler" [routerLink]="['/detay',yemek.adi,yemek.logo,yemek.kategori,yemek.malzemeler,yemek.tarif]" routerLinkActive="router-Link-active">
+    <ion-avatar slot="start">
+      <img src="{{yemek.logo}}">
+    </ion-avatar>
+    <ion-label>
+      <h1>{{yemek.adi}}</h1>
+      <h5>{{yemek.kategori}}</h5>
+    </ion-label>
+  </ion-item>
+
+</ion-list>
+</ion-content>

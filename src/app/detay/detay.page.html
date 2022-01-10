@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Yemek Detayları</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <img src="{{yemek_logo}}" />
+    <ion-card-header>
+      <ion-card-subtitle>{{yemek_kategori}}</ion-card-subtitle>
+      <ion-card-title>{{yemek_adi}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      {{yemek_malzemeler}}</ion-card-content>
+      <ion-card-content>{{yemek_tarif}}</ion-card-content>
+  </ion-card>
+</ion-content>
